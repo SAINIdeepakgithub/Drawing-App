@@ -1,0 +1,57 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Drawing App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Updated jQuery Version -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/start/jquery-ui.css">
+    <link rel="stylesheet" href="styling.css">
+</head>	
+
+<body>
+    <!--title-->
+    <div id="header">Drawing App</div>
+    
+    <div class="inputContainer">
+        <!-- Color Input -->
+        <div class="input" id="colorInput">
+            <input type="text" id="paintColor" placeholder="Enter color code">
+        </div>
+        
+        <!-- Size Input -->
+        <div class="input" id="thicknessInput">
+            <div id="circle"></div>
+        </div>
+        
+        <div class="input">
+            <div id="slider"></div>
+        </div>
+    </div>
+    
+    <!-- Canvas Container -->
+    <div id="container">
+        <canvas id="paint" width="500px" height="400px"></canvas>
+    </div>
+    
+    <!-- Buttons -->
+    <div class="inputContainer2">
+        <div class="input2">
+            <span id="erase" class="button">Erase</span>
+        </div>
+        <div class="input2">
+            <span id="save" class="button">Save</span>
+        </div>
+        <div class="input2">
+            <span id="reset" class="button">Reset</span>
+        </div>
+    </div>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
